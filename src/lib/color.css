@@ -1,0 +1,401 @@
+[v-clock]{
+  display: none;
+}
+.skin-ligth-blue .wrapper {
+  background:     #222d32;
+}
+.skin-blue .main-header .logo {
+  background-color: #3459d7;
+}
+
+.skin-blue .main-header .navbar {
+  background-color: #3459d7;
+}
+.skin-blue .main-header .navbar .sidebar-toggle:hover {
+  background: rgba(0,0,0,0.1);
+  color: #f6f6f6;
+}
+
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+body {
+  background-image: linear-gradient(to bottom, #202b33, #465f70);
+  font-family:
+    "Avenir Next",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    "Oxygen",
+    "Ubuntu",
+    "Cantarell",
+    "Fira Sans",
+    "Droid Sans",
+    "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  height: 100vh;
+  line-height: 1.4;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+.dashboard {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1500px;
+  min-width: 960px;
+  width: 90vw;
+  height: 470px;
+}
+.tabs {
+  border-bottom: 1px solid #dae1e9;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 55px;
+  justify-content: space-between;
+  padding: 0 1em;
+}
+.tabs .cryptocurrency span {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.tabs .cryptocurrency span + span::before {
+  content: " · ";
+}
+
+.tabs .cryptocurrency span:not(:first-child) {
+  font-size: 16px;
+}
+.Tabs {
+  display: flex;
+  color: #7d95b6;
+  flex-direction: row;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+}
+.Tabs-item {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  height: inherit;
+  margin: 0 0.5em;
+  position: relative;
+  transition: all 0.25s ease;
+}
+
+.Tabs-item:first-child {
+  margin-left: 0;
+}
+
+.Tabs-item:last-child {
+  margin-right: 0;
+}
+
+.Tabs-item:focus {
+  outline: none;
+}
+
+.Tabs-item:hover::after {
+  border-bottom-color: #7d95b6;
+}
+
+.Tabs-item::after {
+  bottom: -1px;
+  border-bottom: 1px solid transparent;
+  content: '';
+  height: 1px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.Tabs-item.selected {
+  color: #0667d0;
+}
+
+.Tabs-item.selected::after {
+  bottom: -1px;
+  border-bottom: 1px solid #0667d0;
+  content: '';
+  height: 1px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+.tabl {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  height: 90px;
+  justify-content: center;
+  margin: 1.5em 2em;
+}
+.PriceTable {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.TableCell {
+  display: flex;
+  color: #4e5c6e;
+  flex-direction: column;
+  font-size: 48px;
+  justify-content: center;
+  line-height: normal;
+  width: 100%;
+}
+
+.TableCell:not(:first-child) {
+  border-left: 1px solid #dae1e9;
+}
+.label {
+  color: #7d95b6;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.value {
+  text-align: center;
+}
+
+.value .green {
+  color: #61ca00;
+}
+
+.value .large-font {
+  font-size: 48px;
+  font-weight: normal;
+  vertical-align: baseline;
+}
+
+.value .small-font {
+  font-size: 30px;
+  font-weight: 500;
+  top: -13px;
+  position: relative;
+}
+.chart {
+
+}
+
+.chart .topSection {
+  border-bottom: 1px solid #dae1e9;
+  border-top: 1px solid #dae1e9;
+  display: flex;
+  flex-direction: row;
+  height: 225px;
+}
+
+.chart .PriceChart {
+  z-index: 10;
+}
+
+.chart .VerticalChartAxis .tick {
+  z-index: 100;
+}
+.VerticalChartAxis {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 3em;
+  justify-content: space-between;
+  max-width: 3em;
+  padding: 0.5em 0;
+}
+
+.VerticalChartAxis.right {
+  align-items: flex-end;
+}
+
+.VerticalChartAxis.left {
+  align-items: flex-start;
+}
+
+.VerticalChartAxis .tick {
+  color: #7d95b6;
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+.HorizontalChartAxis {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0.5em 2.5em 1.5em;
+}
+
+.HorizontalChartAxis .tick {
+  color: #7d95b6;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.Footer {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 1.5em auto 0;
+  text-align: center;
+}
+
+.Footer .logo {
+  height: 16px;
+}
