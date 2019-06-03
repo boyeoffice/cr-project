@@ -1,6 +1,6 @@
 
 import Vue from 'vue'
-import App from './App'
+import App from './App.vue'
 window.axios = require('axios')
 //import router from './router'
 import './lib/css.js'
