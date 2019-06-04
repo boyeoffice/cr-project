@@ -6,7 +6,7 @@ import verticalPrice from './modules/vertical_price';
 import selectedCryptocurrency from './modules/selected_crypto';
 import sortPrice from './modules/sort_price';
 import sortTime from './modules/sort_time';
-import priceHistory from './modules/price_history';
+import priceHistoryData from './modules/price_history';
 
 Vue.use(Vuex)
 
@@ -18,6 +18,6 @@ export const store = new Vuex.Store({
     selectedCryptocurrency,
     sortPrice,
     sortTime,
-    priceHistory
+    priceHistoryData
   }
 });

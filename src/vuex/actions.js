@@ -38,3 +38,19 @@ export const sendSortTime = ({commit}, payload) => {
 export const sendPriceHistory = ({commit}, payload) => {
   commit('PRICE_HISTORY_DATA', payload)
 }
+
+export const getCurrency = () => {
+  return new Promise((resolve, reject) => {
+    axios.get('https://api.coinbase.com/v2/prices/' +ACTIVE_CURRENCY+ '/spot?').then(res => {
+      resolve(res)
+    }).catch(err => {
+      reject(err)
+    })
+  })
+}
+
+export const historyData = (payload) => {
+  return new Promise((resolve, reject) => {
+    axios.get('https://www.coinbase.com/api/v2/prices/'+ payload.data_key + '-' + 'usd' + '/historic?period=' + payload.seleted_key)
+  })
+}

@@ -14,6 +14,6 @@ export const sortTime = state => {
   return state.sortTime.model
 }
 
-export const priceHistory = state => {
- return state.priceHistory.model
+export const priceHistoryData = state => {
+ return state.priceHistoryData.model
 }
