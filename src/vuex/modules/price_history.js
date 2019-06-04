@@ -2,8 +2,8 @@ const state = {
   model: []
 }
 
-const mutations = {
-  VERTICAL_PRICE_DATA(state, payload){
+const mutations =  {
+  PRICE_HISTORY_DATA(state, payload){
     state.model = payload
   }
 }
