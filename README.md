@@ -1,6 +1,6 @@
-# vue-project
+# vue-3
 
-> vue for frontend
+> A Vue.js project
 
 ## Build Setup
 
