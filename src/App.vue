@@ -57,6 +57,20 @@
           <!-- /.PriceTable -->
         </div>
         <!-- /.table -->
+        <div class="chart">
+          <div class="topSection">
+            <div class="VerticalChartAxis left" v-if="verticalPrice[0]">
+              <div class="trick">
+                ${{ verticalPrice[0] | formatAxisPrice }}
+              </div>
+              <div class="tick">
+                ${{ verticalPrice[1] | formatAxisPrice }}
+              </div>
+            </div>
+            <!-- /.VerticalChartAxis -->
+            
+          </div>
+        </div>
       </div>
     </div>
   </div>
